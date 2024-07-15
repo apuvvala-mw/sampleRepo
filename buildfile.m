@@ -3,7 +3,7 @@ function plan = buildfile
 plan = buildplan(localfunctions);
 
 % Make the "archive" task the default task in the plan
-plan.DefaultTasks = "test";
+plan.DefaultTasks = "check1 test1";
 
 % Make the "archive" task dependent on the "check" and "test" tasks
 plan("archive1").Dependencies = ["check1" "test1"];
@@ -15,14 +15,15 @@ function check1Task(~)
 % issues = codeIssues;
 % assert(isempty(issues.Issues),formattedDisplayText( ...
 %    issues.Issues(:,["Location" "Severity" "Description"])))
-disp('In check task');
+assert(false);
 end
 
 function test1Task(~)
 % Run unit tests
 % results = runtests(IncludeSubfolders=true,OutputDetail="terse");
 % assertSuccess(results);
-disp('In test task');
+pause(5);
+%disp('In test task');
 end
 
 function archive1Task(~)
