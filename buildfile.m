@@ -22,7 +22,7 @@ function test1Task(~)
 % Run unit tests
 % results = runtests(IncludeSubfolders=true,OutputDetail="terse");
 % assertSuccess(results);
-pause(5);
+pause(10);
 %disp('In test task');
 end
 
