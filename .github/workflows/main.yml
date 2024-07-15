@@ -1,6 +1,6 @@
 
 name: GHA summary table
-on: push
+on: workflow_dispatch
 jobs:
   my-job:
     name: Run MATLAB Script
