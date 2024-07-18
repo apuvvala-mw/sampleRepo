@@ -15,14 +15,15 @@ function check1Task(~)
 % issues = codeIssues;
 % assert(isempty(issues.Issues),formattedDisplayText( ...
 %    issues.Issues(:,["Location" "Severity" "Description"])))
-assert(false);
+% assert(false);
+pause(20)
 end
 
 function test1Task(~)
 % 
 % results = runtests(IncludeSubfolders=true,OutputDetail="terse");
 % assertSuccess(results);
-pause(10);
+error("haha");
 %disp('In test task');
 end
 

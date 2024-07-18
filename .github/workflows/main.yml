@@ -44,6 +44,8 @@ jobs:
       - name: Run build
         if: always()
         uses: matlab-actions/run-build@v2.4.0 
+        with:
+            tasks: check1
  
 
           
