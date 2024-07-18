@@ -16,7 +16,7 @@ function check1Task(~)
 % assert(isempty(issues.Issues),formattedDisplayText( ...
 %    issues.Issues(:,["Location" "Severity" "Description"])))
 % assert(false);
-pause(20)
+pause(10)
 end
 
 function test1Task(~)
